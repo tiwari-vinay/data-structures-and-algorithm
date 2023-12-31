@@ -48,7 +48,15 @@ class Sorting{
     }
 
     void insertion_sort(int[] arr){
-        
+        int n = arr.length;
+        for (int i=1; i<n; i++){
+            int j = i-1;int key = arr[i];
+            while(j>=0 && arr[j]>key){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = key;
+        }
     }
 }
 
@@ -57,7 +65,8 @@ public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {5,5,5,3,2,6,7,8};
         Sorting s = new Sorting();
-        s.merge_sort(arr, 0, arr.length-1);
+        // s.merge_sort(arr, 0, arr.length-1);
+        s.insertion_sort(arr);
         for (int e : arr)
             System.out.print(e + " ");
     }

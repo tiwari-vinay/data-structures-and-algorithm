@@ -76,5 +76,9 @@ class Temp{
     }
     public static void main(String[] args) {
         int[][] mat = {{1,3,3}, {4,5,6}, {4,3,0}};
+        for (int i=0, j=arr.length-1; i<n && j>=0; i++, j--){
+            left[i] += arr[i];
+            right[i] += arr[j]
+        }
     };  
 }
