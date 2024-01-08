@@ -138,12 +138,23 @@ public class Subarray {
     
         return count;
     }
+
+    /*Question: Maximum subarray with sum % k == 0 */
+
+    public static int maxSumDivisibleK(int[] arr, int sum, int n, int k){
+        if(sum%k == 0)
+            return n+1;
+        if(n<0)
+            return -1;
+        else{
+            return Math.max(maxSumDivisibleK(arr,sum-arr[n], n-1, k), maxSumDivisibleK(arr, sum, n-1, k));
+        }
+    }
     
 
     public static void main(String[] args) {
-        int[] arr = {0, 2, -3, 1, 6,6,6};
-        // String s = "cccerrrecdcdccedecdcccddeeeddcdcddedccdceeedccecde";
-        String s = "ereerrrererrrererre";
-        System.out.println(maximumLength(s));
+        int[] arr = {1,4,6,1,0,8};
+        int sum = Arrays.stream(arr).sum();
+        System.out.println(maxSumDivisibleK(arr, sum, arr.length-1, 3));
     }   
 }
