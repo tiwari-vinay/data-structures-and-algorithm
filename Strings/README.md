@@ -9,3 +9,5 @@ Note for a string of string of length n with only one character : number of pali
 5. Maximize partition such that no two substring has common character
 6. Given a string S of length N and integer K, find the smallest length string which contains the string S as a sub string exactly K times.
 7. Given a string S, the task is to check if S contains a pair of substrings of length K which are anagrams of each other and doesn’t contain the character X in them. If no such substring exists, print -1.
+8. Largest substring to be removed to make a string palindrome
+9. Given a string str and an integer K, the task is to find the length of the longest sub-string S such that every character in S appears at least K times.
