@@ -1,5 +1,8 @@
 package Strings;
 
+/*
+ * Question : count of susbtring which has all distinct chars 
+ */
 public class Four {
     public static int sol(String s){
         int[] cnt = new int[26];

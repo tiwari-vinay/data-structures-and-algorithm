@@ -1,4 +1,3 @@
-package Strings;
 
 /**
  * Smallest string which consisting of a string S k times
